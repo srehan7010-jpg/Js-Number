@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    color: black;
+    background: linear-gradient(135deg, #0f0c29, #302b63);
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* TOP BAR */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px burlywood;
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card {
+    display: grid;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 2px 12px;
+    border: 2px solid white;
+    border-radius: 20px;
+    place-items: center;
+    text-align: center;
+    height: 440px;
+}
+
+.top {
+    background: rgba(30, 29, 29, 0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 6px 12px;
+    height: 280px;
+}
+
+.hd {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 1px 10px;
+    color: burlywood;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.40s ease-in-out;
+}
+
+.hd:hover {
+    transform: scale(1.05);
+    box-shadow: burlywood 0px 3px 15px;
+}
+
+h4 {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 4px 10px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 16px 0px;
+    border-radius: 12px;
+    border: 2px solid rgb(59, 59, 59);
+    height: 200px;
+}
+
+#btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.40s ease-in-out;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    box-shadow: #4CAF50 0px 3px 15px;
+}
+
+#get {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 60%;
+    transition: 0.20s ease-in-out;
+}
+
+#get:hover {
+    box-shadow: red 0px 3px 15px;
+}
+
+#check {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.40s ease-in-out;
+
+}
+
+#check:hover {
+    transform: scale(1.05);
+    box-shadow: #008CBA 0px 3px 10px;
+}
+
+.option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.50s ease-in-out;
+}
+
+.option:hover {
+    transform: scale(1.09);
+}
+
+.correct {
+    background: #4CAF50;
+    color: white;
+}
+
+.wrong {
+    background: #f44336;
+    color: white;
+}
+
+#attempt {
+    font-size: 14px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+}
+
+.dot-active {
+    color: #4CAF50;
+}
+
+.dot-used {
+    color: #ff0000;
+}

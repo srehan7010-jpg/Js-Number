@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="Gradient flow.mp4" type="video/mp4">
+    </video>
+    <div class="top-bar">
+        <div class="logo"><i>GTN Game</i></div>
+    </div>
+    <div class="card">
+        <div class="hd">
+            <h2>Number Game</h2>
+        </div>
+        <div class="top">
+            <h4>Guess a number and it's under 100 number...</h4>
+            <div class="display">
+                <button id="btn">Generate Number</button><br><br>
+
+                <input type="number" id="get" placeholder="Guess 1-100">
+                <button id="check">Check</button>
+
+                <div id="attempt"></div>
+                <p id="result"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
